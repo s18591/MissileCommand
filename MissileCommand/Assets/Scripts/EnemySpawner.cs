@@ -27,7 +27,7 @@ public class EnemySpawner : MonoBehaviour, IEnemySpawner
     {
         if (timer > timeTilNextSpawn)
         {
-            timeTilNextSpawn = Random.Range(1, 15);
+            timeTilNextSpawn = Random.Range(1, 5);
             Instantiate(spawnCommet, new Vector2(transform.position.x, transform.position.y), spawnCommet.rotation);
             timer = 0;
         }

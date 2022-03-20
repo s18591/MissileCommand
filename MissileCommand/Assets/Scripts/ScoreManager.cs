@@ -13,7 +13,7 @@ public class ScoreManager : MonoBehaviour, IScoreManager
     void Start() => Instance = this;
 
     // Update is called once per frame
-    void Update() => GetComponent<Text>().text = "" + score;
+    void Update() => GetComponent<Text>().text = "Score:" + score;
 
     public void AddScore()
     {

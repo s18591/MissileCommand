@@ -21,7 +21,7 @@ public class BoomDestroyer : MonoBehaviour, IBoomDestroyer
 
     public void TimeTillExplosion()
     {
-        if (timer > 1.5)
+        if (timer > 1)
         {
             Destroy(gameObject);
             timer = 0;

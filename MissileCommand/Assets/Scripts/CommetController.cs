@@ -12,5 +12,5 @@ public class CommetController : MonoBehaviour, ICommetController
         target = TargetChooser.Instance.GetTarget();
         StartCommet();
     }
-    public void StartCommet() => GetComponent<Rigidbody2D>().velocity = ((target.transform.position - transform.position) / Vector2.Distance(target.transform.position, transform.position)) * 5;
+    public void StartCommet() => GetComponent<Rigidbody2D>().velocity = ((target.transform.position - transform.position) / Vector2.Distance(target.transform.position, transform.position)) * 8;
 }
